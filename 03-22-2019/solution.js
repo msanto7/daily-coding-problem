@@ -7,6 +7,10 @@
 
 // For example, given [-9, -2, 0, 2, 3], return [0, 4, 4, 9, 81].
 
-var sortedListInt = [1, 2, 3, 4, 5, 6];
+var sortedListInt2 = [1, 2, 3, 4, 5, 6];
 var sortedListInt = [-9, -2, 0, 2, 3];
 
+for (var i = 0; i < sortedListInt.length; i++) {
+    sortedListInt[i] = sortedListInt[i] * sortedListInt[i];
+    console.log(sortedListInt[i]);
+}
