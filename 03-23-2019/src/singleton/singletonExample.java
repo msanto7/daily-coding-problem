@@ -2,12 +2,28 @@ package singleton;
 
 public class singletonExample {
 	
-	private static singletonExample firstInstance = null;
-	private static singletonExample secondInstance = null;
+	//private static singletonExample firstInstance = null;
+	//private static singletonExample secondInstance = null;
+	
+	private static singletonExample[] instances;
 	
 	private singletonExample() { }
 	
-	public static singletonExample getInstance() {
+	public static void initNumInstances(int num) {
+		instances = new singletonExample[2];
+	}
+	
+	public static singletonExample getInstance(int index) {
+		if (instances == null) {
+			System.out.println("pass num instances");
+		}
+		if (instances[index] == null) {
+			instances[index] = new singletonExample();
+		}
+		return instance[index];
+	}
+	
+	/* public static singletonExample getInstance() {
 		
 		// lazy init -- only created if necessary
 		if (firstInstance == null && secondInstance == null) {
@@ -19,4 +35,5 @@ public class singletonExample {
 		
 		return firstInstance;
 	}
+	*/
 }
