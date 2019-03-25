@@ -20,7 +20,7 @@ public class singletonExample {
 		if (instances[index] == null) {
 			instances[index] = new singletonExample();
 		}
-		return instance[index];
+		return instances[index];
 	}
 	
 	/* public static singletonExample getInstance() {
