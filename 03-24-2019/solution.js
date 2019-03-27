@@ -8,5 +8,8 @@
 // so how would we simply identitfy if the original string is a palendrome ?
 // first of all we may be able to seperate between odd num letters and even num letters
 
+var temp = 'string';
+var pali = 'cattac';
+
 
 
