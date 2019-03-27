@@ -5,6 +5,8 @@
 // Write a function that, given n, returns the number of rounds you'd expect to play until one coin remains.
 
 var numRounds = flipFunction(32);
+numRounds = flipFunction(100);
+numRounds = flipFunction(1000);
 
 function flipFunction(numCoins) {
 
